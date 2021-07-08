@@ -37,19 +37,19 @@
         <br>
     <div class="form-group">
         <label>Nom du produit</label>
-        <input type="text" class="form-control" name="name"required>
+        <input type="text" class="form-control" name="name" required>
     </div>
     <div class="form-group">
         <label>Description</label>
-        <input type="text" class="form-control" name="description"required>
+        <input type="text" class="form-control" name="description" required>
     </div>
     <div class="form-group">
         <label>Prix</label>
-        <input type="number" class="form-control" name="price"required>
+        <input type="number" min="0" step=".01" class="form-control" name="price" required>
     </div>
     <div class="form-group">
         <label>Quantité</label>
-        <input type="number" class="form-control" name="quantity">
+        <input type="number" min="0" class="form-control" name="quantity">
     </div>
         <input type="submit" name="submit" value="Soumettre" class="btn">
     </form>

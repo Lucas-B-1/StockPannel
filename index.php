@@ -20,7 +20,7 @@
 			<div class="col-md-8 col-xs-12 col-sm-12 login_form ">
 				<div class="container-fluid">
 					<div class="row">
-						<h2>Connexion</h2>
+						<h2>Connexion panneau d'administration</h2>
 					</div>
 					<div class="row">
 						<form method="POST" action="login.php" control="" class="form-group">
@@ -46,3 +46,22 @@
 </div>   
 </body>
 </html>
+?>
+<style>
+.login{
+	width: 100%;
+	margin: auto;
+	padding-left: 200px;
+}
+.btn{
+	border: solid 1px black;
+}
+input{
+	min-width: 100%;
+}
+@media screen and (max-width: 650px) {
+.login{
+  padding-left: 50px;
+}
+}
+</style>

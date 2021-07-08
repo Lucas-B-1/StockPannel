@@ -22,7 +22,6 @@ include "_php/modifie.php";
             <a class="nav-item nav-link" href="home.php">Accueil</a>
             <a class="nav-item nav-link" href="showlist.php">Liste des produits</a>
             <a class="nav-item nav-link active" style="background-color: #DBF3CC; color:#228B22;" href="addproduct.php">Ajouter un produit</a>
-            <a class="nav-item nav-link" style="background-color: #F2DEDE; color:#A94442" href="deleteproduct.php">Supprimer un produit</a>
             </div>
         </div>
     </nav>
@@ -56,11 +55,11 @@ include "_php/modifie.php";
             </div>
             <div class="form-group">
                 <label>Prix</label>
-                <input type="number" class="form-control" name="price" id="price" value="<?=$row['price']?>"required>
+                <input type="number" min="0" step=".01" class="form-control" name="price" id="price" value="<?=$row['price']?>"required>
             </div>
             <div class="form-group">
                 <label>Quantité</label>
-                <input type="number" class="form-control" name="quantity" value="<?=$row['quantity']?>">
+                <input type="number" min="0" class="form-control" name="quantity" value="<?=$row['quantity']?>">
             </div>
                 <input type="number" name="id" value="<?=$row['id']?>" hidden>
                 <button type="submit" name="update" value="Modifier" class="btn btn-primary">Modifier</button>

@@ -19,7 +19,7 @@ if(isset($_GET['id'])){
     if(mysqli_num_rows($result) > 0){
         $row = mysqli_fetch_assoc($result);
     }else{
-        header("Location: ./update.php"); // voir à 04:45 si read.php
+        header("Location: ./update.php");
     }
 
 }else if (isset($_POST['update'])){
@@ -55,7 +55,7 @@ if(isset($_GET['id'])){
         }
     }
 }else{
-    header("Location: ./update.php"); // voir à 04:45 si read.php
+    header("Location: ./update.php");
 }
 
 ?>

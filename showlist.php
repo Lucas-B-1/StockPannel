@@ -26,7 +26,7 @@ include "_php/read.php";
         <div class="container">
             <div class="box">
                 <h5 class="display-4 text-center">Liste des produits</h5><hr>
-
+                <!-- récupère le nmbre de lignes dans un résultat -->
                 <?php if(mysqli_num_rows($result)){ ?>
  
                 <table class="table table-striped">
@@ -44,6 +44,7 @@ include "_php/read.php";
                     <tbody>
                         <?php 
                         $i = 0 ;
+                        // Récupère une ligne de résultat sous forme de tableau
                         while($rows = mysqli_fetch_assoc($result)){
                             $i++; 
                         ?>
@@ -63,9 +64,6 @@ include "_php/read.php";
                     </tbody>
                 </table>
                 <?php } ?>
-                <div class="link-right">
-                    <a href="_php/read.php" class="link-primary"></a>
-                </div>
             </div>
         </div>
     </body>
